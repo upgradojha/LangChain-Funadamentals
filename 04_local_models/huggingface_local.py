@@ -4,6 +4,8 @@ import torch
 # The official model ID for the 0.5B instruction-tuned Qwen model
 model_id = "Qwen/Qwen2.5-0.5B-Instruct"
 
+
+# utilzed the qwen model via hugging face pipline
 llm = HuggingFacePipeline.from_model_id(
     model_id=model_id,
     task="text-generation",
